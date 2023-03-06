@@ -1,0 +1,18 @@
+-- 0. 変更をコミット --
+$ git add .
+$ git commit -m 'Emura2を追加'
+
+-- 1. mainブランチをpull --
+$ git checkout main
+$ git pull
+
+-- 2. mainブランチをfeatureブランチにマージ --
+$ git checkout feature/emura
+$ git merge main
+
+-- 3. featureブランチをmainブランチにマージ --
+$ git checkout main
+$ git merge feature/emura
+
+-- 4. mainブランチをpush --
+$ git push
